@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import Class_wiew, func_wiew
-from task3.views import MainWiew, SelGame, Champion
+from task4.views import MainWiew, SelGame, Champion
 
 urlpatterns = [
     path('admin/', admin.site.urls),
