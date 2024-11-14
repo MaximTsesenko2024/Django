@@ -9,7 +9,7 @@ class MainWiew(TemplateView):
 
 class SelGame(TemplateView):
     template_name = 'select_game.html'
-    extra_context = {'list_game': ['Шахматы', 'Шашки', 'Бильярд']}
+    extra_context = {'first': 'Шахматы','second': 'Шашки', 'third': 'Бильярд'}
 
 
 class Champion(TemplateView):
