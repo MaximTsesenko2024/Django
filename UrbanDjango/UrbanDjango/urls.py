@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import Class_wiew, func_wiew
 from task4.views import MainWiew, SelGame, Champion
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +26,9 @@ urlpatterns = [
     path('func/', func_wiew),
     path('main/', MainWiew.as_view()),
     path('select_game/', SelGame.as_view()),
-    path('champion/', Champion.as_view())
+    path('champion/', Champion.as_view()),
+    path('', sign_up_by_html),
+    path('django_sign_up/', sign_up_by_django)
+
 
 ]
